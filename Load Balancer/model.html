@@ -1,11 +1,30 @@
+<!DOCTYPE html>
 <html>
-    <head>This page shows Priority models</head>
-    <body>
-        <form action = "/process_request",method = "post">
-            <label for="model">Model</label><br />
-            <input type="number" name="number" id = "number" placeholder = "0"><br /> <br />
-            <button type = "submit">Show model</button>
-
-        </form>
-    </body>
+  <head>
+    <title>Priority Models</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <form action="/process_request" method="post">
+      <label for="model">Model:</label><br />
+      <input
+        type="text"
+        name="model"
+        id="model"
+        placeholder="Enter model name"
+        required
+      /><br />
+      <br />
+      <button type="submit">Show Model</button>
+    </form>
+  </body>
 </html>
